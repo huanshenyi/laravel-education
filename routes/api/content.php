@@ -1,0 +1,15 @@
+<?php
+Route::group(['namespace'=>'Api'],function(){
+    //タグ表示api
+    Route::get('tags','ContentController@tags');
+    //レッスンapi
+    Route::get('lesson/{tid}','ContentController@lesson');
+    //オススメapi
+    Route::get('commendLesson/{row}','ContentController@commendLesson');
+    //人気api
+    Route::get('hotLesson/{row}','ContentController@hotLesson');
+    //動画
+    Route::get('videos/{lessonId}','ContentController@videos');
+    //動画タイトル
+    Route::get('VideoTitle/{lessonId}','ContentController@VideoTitle');
+});
