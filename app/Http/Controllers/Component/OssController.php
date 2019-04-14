@@ -11,11 +11,11 @@ class OssController extends Controller
     public function sign()
     {
         //阿里云 AccessKeyId
-        $id = 'LTAI5IJWboi6rUtu';
+        $id = 'xxxxxxx';
         //阿里云  AccessKeySecret
-        $key = 'xUtSPRuH9AQQ9NKP2SngFXWpTbu56b';
+        $key = 'xxxxxxx';
         //OSS外网域名: 在阿里云后台OSS bucket中查看
-        $host = 'https://txy1226052mylaravel-video.oss-cn-qingdao.aliyuncs.com';
+        $host = 'xxxxxx';
         //oss中本次上传存放文件的目录
         $dir = $_GET['dir'];
         function gmt_iso8601($time)
